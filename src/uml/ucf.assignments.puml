@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+interface todo
+App <|- Map
+todo <|- App
+Map <|- List
+
+
+class App {
+main()
+start()
+}
+
+class List {
+    ArrayList list
+}
+
+class Map {
+TreeMap<String, ArrayList<String>> map
+    int addMap()
+    int remove()
+    int edittitle()
+    int additem()
+    int removeitem()
+    int newdescription()
+    int editduedate()
+    int markcomplete()
+    int displaylist()
+    int displayincomplete()
+    int displaycompletelist()
+    int outputlist()
+    int output_alllist()
+}
+@enduml
